@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Cadastro de Funcionários</h1>
+    <form id="funcionario-form">
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" placeholder="Nome" required>
+        </div>
+        <div class="form-group">
+            <label for="salario">Salário:</label>
+            <input type="number" id="salario" placeholder="Salário" required>
+        </div>
+        <div class="form-group">
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" required>
+                <option value="">Selecione o sexo</option>
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+        </div>
+        <button type="submit" class="btn-roxo">Adicionar Funcionário</button>
+    </form>
+
+    <button id="remover-todos" class="btn-roxo">Remover Todos os Funcionários</button>
+
+    <h2>Lista de Funcionários</h2>
+    <table id="funcionarios-table" class="tabela-roxa">
+        <thead>
+        <tr>
+            <th class="roxo">ID</th>
+            <th class="roxo">Nome</th>
+            <th class="roxo">Salário</th>
+            <th class="roxo">Sexo</th>
+        </tr>
+        </thead>
+        <tbody id="funcionarios-lista">
+        </tbody>
+    </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

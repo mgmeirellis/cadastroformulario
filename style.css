@@ -1,0 +1,54 @@
+/* style.css */
+
+.container {
+    max-width: 800px;
+    margin: 50px auto; /* Centraliza verticalmente e adiciona espaço superior */
+    padding: 20px;
+    background-color: #e1bee7; /* Fundo roxo claro */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo na horizontal */
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-roxo {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Espaço entre botões */
+}
+
+.tabela-roxa {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-roxa th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.tabela-roxa td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Estilo específico para a célula do cabeçalho da coluna "ID", "Nome", "Salário" e "Sexo" */
+.tabela-roxa th.roxo {
+    background-color: #6a1b9a; /* roxo escuro */
+    color: white;
+}
